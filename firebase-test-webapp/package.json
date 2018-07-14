@@ -1,0 +1,14 @@
+{
+  "name": "firebase-test-webapp",
+  "version": "0.0.1",
+  "description": "Web application for learning Firebase",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^5.2.0"
+  }
+}
