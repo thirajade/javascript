@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
       const {text} = this.props
     return (
-      <section class="hero is-light is-large">
+      <section class="hero is-dark is-medium">
         <div class="hero-body">
           <div class="container">
             <h1 class="title">Hello, This is my homepage</h1>

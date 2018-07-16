@@ -11,33 +11,22 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: "Jade"
+      welcome: "Get the f*** out!"
     };
   }
 
-  changeName = e => {
-    this.setState({ name: e.target.value });
-  };
-
   render() {
-    let { name } = this.state;
+    let { welcome } = this.state;
     return (
       <div>
         <Nav />
-        <input
-          class="input"
-          type="text"
-          placeholder="Text input"
-          value={name}
-          onChange={e => this.changeName(e)}
-        />
         <Link class="button is-light" to="/">
           Home
         </Link>
-        <Link class="button is-dark" to="/product">
+        <Link class="button is-warning" to="/product">
           Product
         </Link>
-        <Route exact={true} path="/" render={() => <Home text={name} />} />
+        <Route exact={true} path="/" render={() => <Home text={welcome} />} />
         <Route exact={true} path="/product" render={() => <Product />} />
       </div>
     );
